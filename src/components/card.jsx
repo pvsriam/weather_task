@@ -12,7 +12,7 @@ function Card() {
     }
 
     function getWeather() {
-        var weatherData = axios(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e17f7f13bd86610a5b01b7a6c383dc23`);
+        var weatherData = axios(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e17f7f13bd86610a5b01b7a6`);
 
         weatherData.then(function (success) {
             console.log(success.data);
