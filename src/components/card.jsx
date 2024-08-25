@@ -4,7 +4,7 @@ import axios from "axios";
 function Card() {
     const [city, setCity] = useState('');
     const [weather, setWeather] = useState('');
-    const [temp, setTemp] = useState(null); // Initial value is null
+    const [temp, setTemp] = useState(null); 
     const [desc, setDesc] = useState('');
 
     function handleChange(evt) {
@@ -22,7 +22,6 @@ function Card() {
         });
     }
 
-    // Simplified temperature conversion
     let temperature = '';
     if (temp) {
         temperature = (temp - 273.15).toFixed(2);
